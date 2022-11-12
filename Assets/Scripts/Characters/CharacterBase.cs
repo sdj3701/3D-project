@@ -96,7 +96,6 @@ public class CharacterBase : MonoBehaviour
         GameManager.AddPlayer(this); //게임 메니저가 플레이어가 없어 플레이어를 추가 누구를 나를 
         PlayerController.mouseFix = (true); //마우스를 바로 잠금수 있게
         new PlayerController().Possess(this);
-        
     }
 
     virtual protected void Update()
@@ -107,15 +106,14 @@ public class CharacterBase : MonoBehaviour
         if(InputManager.GetMouseState(MouseCode.LeftClick) == KeyState.Down)
         {
             anim.SetTrigger("Attack");
-            Vector3 firPos = transform.position + anim.transform.forward; //+ new Vector3(1f, 1f, 1f); // transform은 위치, 회전, 크기를 담고 있는 컴포넌트
-            transform.LookAt( new Vector3(firPos.x,firPos.y,firPos.z ) );
-            GameObject a = Instantiate(BaseAttack, firPos, Quaternion.identity);
+            Vector3 firePos = transform.position + anim.transform.forward + new Vector3(0f, 1f, 0f); // transform은 위치, 회전, 크기를 담고 있는 컴포넌트
+            GameObject fire = Instantiate(BaseAttack, firePos, transform.rotation);
             //Instantiate에 첫번째 인자는 아까 생성한 BaseAttack 프리팹 오브젝트입니다. 
             //두번째는 오브젝트를 생성할 위치인데 플레이어 기체에서 발사될 것이므로 플레이어 기체의 위치값을 넣습니다. 
-            //세번째 마지막은 오브젝트의 회전값입니다. 특별히 회전시키지않고 기본으로 사용할 것이므로 Quaternion.identity로 줍니다. 
+            //세번째 마지막은 오브젝트의 회전값입니다. transform.rotation은 회전하는 방향으로 돌아갑니다. 특별히 회전시키지않고 기본으로 사용할 것이므로 Quaternion.identity로 줍니다. 
 
-            ParticleCollisionInstance basea = a.GetComponent<ParticleCollisionInstance>();
-            basea.from = gameObject;
+            ParticleCollisionInstance BaseAtk = fire.GetComponent<ParticleCollisionInstance>();
+            BaseAtk.from = gameObject;
             
         }
 

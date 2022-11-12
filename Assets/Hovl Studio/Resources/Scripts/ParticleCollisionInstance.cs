@@ -17,14 +17,16 @@ public class ParticleCollisionInstance : MonoBehaviour
     private List<ParticleCollisionEvent> collisionEvents = new List<ParticleCollisionEvent>();
     private ParticleSystem ps;
     public GameObject from;
+
     void Start()
     {
         part = GetComponent<ParticleSystem>();
+        Destroy(gameObject, DestroyTimeDelay + 0.5f);
     }
     void OnParticleCollision(GameObject other)
     {   
-        if(other.tag == gameObject.tag || other == from) return;//내가 쏜게 나한테 맞는지 확인 나를 무시하고 날라가세요
-        Debug.Log(other);
+        
+        //if(other.tag == gameObject.tag || other == from) return;//내가 쏜게 나한테 맞는지 확인 나를 무시하고 날라가세요
 
         int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);//collision 부딪히면 이벤트 발생
         for (int i = 0; i < numCollisionEvents; i++)
@@ -50,5 +52,6 @@ public class ParticleCollisionInstance : MonoBehaviour
         {
             Destroy(gameObject, DestroyTimeDelay + 0.5f);
         }
+        
     }
 }
