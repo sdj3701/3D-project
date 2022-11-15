@@ -66,13 +66,17 @@ public class PlayerController : Controller
 
         targetCharacter.MoveTo(moveDir);
         
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            targetCharacter.Jump();
+        }
 
-        if(Input.GetMouseButtonDown(0))
+        if(InputManager.GetMouseState(MouseCode.LeftClick) == KeyState.Down)
         {
             
             if(mouseFix)
             {
-                //targetCharacter.Attack(InputManager.mouseHitPosition);
+                targetCharacter.Attack(InputManager.mouseHitPosition);
             }
             else if(InputManager.mouseHitInterFace == null)
             {

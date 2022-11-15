@@ -18,12 +18,11 @@ public class MonsterBase : MonoBehaviour
         protected set => _stat = value;
     }
     [SerializeField]
-    protected ControllerType controller;
+    protected ControllerType controller; //따라갈 컨트롤러 찾기
 
     protected Vector3 preferedDirection = Vector3.right; // 보고 싶어하는 방향
 
     public Vector3 FaceDirection {get => preferedDirection; } // get{return preferedDirection;}를 줄이기 위해 사용
-
     public Vector3 moveDirection {get; protected set; } //이동하는 방향
     public Vector3 physicsDirection {get; protected set;} //물리적으로 밀리고 있는 속도
 

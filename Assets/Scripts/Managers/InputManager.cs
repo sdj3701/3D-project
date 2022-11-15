@@ -24,6 +24,20 @@ public enum KeyState
 
 public class InputManager : MonoBehaviour
 {
+    private static InputManager _instance;
+    public static InputManager Instance
+    {
+        get
+        {
+            if(_instance == null)
+            {
+                _instance = GameManager.Instance.gameObject.AddComponent<InputManager>();
+            }
+
+            return _instance;
+        }
+    }
+
     private static KeyState[] mouseState = new KeyState[(int)MouseCode.Length]; //마우스에 있는 키 개수만큼 배열을 만들어줌
 
     public static GameObject mouseHitInterFace {get; protected set;}//마우스가 올라가있는 UI

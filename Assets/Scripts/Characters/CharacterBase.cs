@@ -22,7 +22,6 @@ public class CharacterBase : MonoBehaviour
     protected Vector3 preferedDirection = Vector3.right; // 보고 싶어하는 방향
 
     public Vector3 FaceDirection {get => preferedDirection; } // get{return preferedDirection;}를 줄이기 위해 사용
-
     public Vector3 moveDirection {get; protected set; } //이동하는 방향
     public Vector3 physicsDirection {get; protected set;} //물리적으로 밀리고 있는 속도
 
@@ -30,6 +29,13 @@ public class CharacterBase : MonoBehaviour
     protected GameObject appearance;
     public GameObject BaseAttack;
     
+    //밀리고 있는 속도를 점진적으로 줄이기 위한 값
+    [SerializeField]
+    protected float linearDrag;
+
+    [SerializeField]
+    protected ControllerType controller; //따라갈 컨트롤러찾기
+
     public Rigidbody rigid3D {get; protected set;}
     public Animator anim {get; protected set;} 
     public AppearanceInfo appearInfo{get; protected set;}
@@ -49,18 +55,23 @@ public class CharacterBase : MonoBehaviour
     public bool changeFaceOnController;//컨트롤러가 보고 싶은 방향으로 방향을 돌림
     public bool rotationOnController; //컨트롤러가 보는 방향으로 회전함
 
-    protected List<GameObject> stepList = new List<GameObject>();
-    // public bool isGround
-    // {
-    //     get
-    //     {
-    //         for(int i = 0; i < stepList.Count; i++)
-    //         {
-    //             if(stepList[i] == null) stepList.RemoveAt(i);
-    //         }
-    //         return stepList.Count > 0;
-    //     }
-    // }
+    protected List<GameObject> stepList = new List<GameObject>(); //내가 밟고 있는 녀석들의 리스트
+
+    public static CharacterBase playercharacter; 
+
+    //땅을 밟고 있는가
+    public bool isGround 
+    {
+        get
+        {
+            for(int i = 0; i < stepList.Count; i++)
+            {
+                //해당칸이 비어 있다면 해당 칸을 삭제합니다
+                if(stepList[i] == null) stepList.RemoveAt(i);
+            }
+            return stepList.Count > 0;
+        }
+    }
 
     public void RemoveUpdate(System.Action targetAction)
     {
@@ -77,8 +88,12 @@ public class CharacterBase : MonoBehaviour
         CharacterUpdate = CharacterUpdate + targetAction;
     }
 
-    void Start()
+    protected virtual void Start()
     {
+        if(controller == ControllerType.LocalPlayer) //컨트롤러가 == 컨트롤러 타입이 로컬 플레이면은
+        {
+            playercharacter = this; //플레이어 캐릭터는 나다
+        }
         CharacterUpdate += MovementUpdate; //캐릭터가 새로 갱신 한게 있으면 움직이자
         if(appearance) //appearance가 있으면 레퍼런스 안에있는 애니메이션을 불러오고
         {
@@ -96,26 +111,13 @@ public class CharacterBase : MonoBehaviour
         GameManager.AddPlayer(this); //게임 메니저가 플레이어가 없어 플레이어를 추가 누구를 나를 
         PlayerController.mouseFix = (true); //마우스를 바로 잠금수 있게
         new PlayerController().Possess(this);
+        Stat.owner = this;
     }
 
     virtual protected void Update()
     {
         currentController.Control();
         transform.position += (moveDirection * Stat.MoveSpeed * Time.deltaTime); //위치에 방향을 더해서 간다 (방향 * 스피드 * 시간)
-
-        if(InputManager.GetMouseState(MouseCode.LeftClick) == KeyState.Down)
-        {
-            anim.SetTrigger("Attack");
-            Vector3 firePos = transform.position + anim.transform.forward + new Vector3(0f, 1f, 0f); // transform은 위치, 회전, 크기를 담고 있는 컴포넌트
-            GameObject fire = Instantiate(BaseAttack, firePos, transform.rotation);
-            //Instantiate에 첫번째 인자는 아까 생성한 BaseAttack 프리팹 오브젝트입니다. 
-            //두번째는 오브젝트를 생성할 위치인데 플레이어 기체에서 발사될 것이므로 플레이어 기체의 위치값을 넣습니다. 
-            //세번째 마지막은 오브젝트의 회전값입니다. transform.rotation은 회전하는 방향으로 돌아갑니다. 특별히 회전시키지않고 기본으로 사용할 것이므로 Quaternion.identity로 줍니다. 
-
-            ParticleCollisionInstance BaseAtk = fire.GetComponent<ParticleCollisionInstance>();
-            BaseAtk.from = gameObject;
-            
-        }
 
         if(changeFaceOnController) preferedDirection = currentController.direction;
         //만약 컨트롤러가 보고 싶은 방향으로 방향을 돌리 참이면 
@@ -152,11 +154,19 @@ public class CharacterBase : MonoBehaviour
     virtual protected void Attack()
     {
         anim.SetTrigger("Attack");
+         Vector3 firePos = transform.position + anim.transform.forward + new Vector3(0f, 1f, 0f); // transform은 위치, 회전, 크기를 담고 있는 컴포넌트
+            GameObject fire = Instantiate(BaseAttack, firePos, transform.rotation);
+            //Instantiate에 첫번째 인자는 아까 생성한 BaseAttack 프리팹 오브젝트입니다. 
+            //두번째는 오브젝트를 생성할 위치인데 플레이어 기체에서 발사될 것이므로 플레이어 기체의 위치값을 넣습니다. 
+            //세번째 마지막은 오브젝트의 회전값입니다. transform.rotation은 회전하는 방향으로 돌아갑니다. 특별히 회전시키지않고 기본으로 사용할 것이므로 Quaternion.identity로 줍니다. 
+
+            ParticleCollisionInstance BaseAtk = fire.GetComponent<ParticleCollisionInstance>();
+            BaseAtk.from = gameObject;
         if(Broadcast2Addon != null) Broadcast2Addon("Attack");
 
     }
 
-    virtual public void Atatack(Vector3 wantPosition)
+    virtual public void Attack(Vector3 wantPosition)
     {
         focusPosistion = wantPosition;
         Attack();
@@ -176,7 +186,7 @@ public class CharacterBase : MonoBehaviour
 
         Stat.HealthCurrent -= damage;
 
-        anim.SetInteger("animation", 4);
+        //anim.SetInteger("animation", 4);
 
         if(Stat.HealthCurrent <= 0)
         {
@@ -188,39 +198,42 @@ public class CharacterBase : MonoBehaviour
 
     virtual protected void AnimationUpdate()
     {
+        
+        anim.SetBool("Ground",isGround);
+
         if(moveDirection.magnitude > 0) //이동방향에 거리가 0보다 크면
         {
-            anim.SetInteger("animation",20);
+            anim.SetFloat("Velocity",1f);
         }
         else
         {
-            anim.SetInteger("animation",13);
+            anim.SetFloat("Velocity",0f);
         }
         
     }
 
-    // public virtual void Jump()
-    // {
-    //     if(isGround)// 땅을 밝고 있어야 점프 가능
-    //     {
-    //         if(rigid3D) 
-    //         {
-    //             rigid3D.AddForce(Vector3.up * Stat.JumpPower);
-    //             stepList.Clear();
-    //         }
-    //     }
-    // }
+    public virtual void Jump()
+    {
+        if(isGround)// 땅을 밝고 있어야 점프 가능
+        {
+            if(rigid3D) //rigidbody에 영향을 받고 있다면
+            {
+                rigid3D.AddForce(Vector3.up * Stat.JumpPower);// 점프를 시켜주는 부분 리지드바디에 힘을추가하면 
+                stepList.Clear(); //점프를 하면 리스트를 지움
+            }
+        }
+    }
 
-    // //들어오면 추가
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //     //밝고 있지 않으면 새로 추가
-    //     if(!stepList.Contains(other.gameObject)) stepList.Add(other.gameObject); 
-    // }
+    //들어오면 추가
+    private void OnTriggerEnter(Collider other)
+    {
+        //밝고 있지 않으면 새로 추가
+        if(!stepList.Contains(other.gameObject)) stepList.Add(other.gameObject); 
+    }
 
-    // private void OnTriggerExit(Collider other) 
-    // {
-    //     stepList.Remove(other.gameObject);
-    // }
+    private void OnTriggerExit(Collider other) 
+    {
+        stepList.Remove(other.gameObject);
+    }
 
 }
