@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : Controller
 {
+
     float horizontalAngle; // 수평
     float verticalAngle; // 수직
     

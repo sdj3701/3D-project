@@ -5,7 +5,6 @@ using UnityEngine;
 public class DamageBox : MonoBehaviour
 {
     public CharacterBase owner;
-    public MonsterBase owner1;
     public Collider col;
     public AppearanceInfo info;
 
@@ -16,8 +15,8 @@ public class DamageBox : MonoBehaviour
     void Start()
     {
         col = GetComponent<Collider>();
-        info = GetComponent<AppearanceInfo>(); //부모에 있깅는 해야 주든가 말든가
-        owner = GetComponent<CharacterBase>(); 
+        info = GetComponentInParent<AppearanceInfo>(); //부모에 있기는 해야 주든가 말든가
+        owner = GetComponentInParent<CharacterBase>(); 
 
         if(col && info)
         {
@@ -33,14 +32,6 @@ public class DamageBox : MonoBehaviour
         if(other && (!owner || other.Stat.isAlly != owner.Stat.isAlly))
         {// 주인이 없으면 동맹을 확인 할 수 없어요 무조건 떄리기 ex) 투석
             other.ApplyDamage(damage, owner);
-        }
-    }
-    public void ApplyDamage(MonsterBase other)
-    {
-        //상대방이 있을 때에만 데미지를 줍니다 그리고 동맹이 아니면
-        if(other && (!owner || other.Stat.isAlly != owner.Stat.isAlly))
-        {// 주인이 없으면 동맹을 확인 할 수 없어요 무조건 떄리기 ex) 투석
-            other.ApplyDamage(damage, owner1);
         }
     }
 

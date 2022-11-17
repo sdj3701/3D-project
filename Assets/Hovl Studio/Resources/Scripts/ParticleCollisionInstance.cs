@@ -25,9 +25,7 @@ public class ParticleCollisionInstance : MonoBehaviour
     }
     void OnParticleCollision(GameObject other)
     {   
-        
         //if(other.tag == gameObject.tag || other == from) return;//내가 쏜게 나한테 맞는지 확인 나를 무시하고 날라가세요
-
         int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);//collision 부딪히면 이벤트 발생
         for (int i = 0; i < numCollisionEvents; i++)
         {
@@ -42,9 +40,10 @@ public class ParticleCollisionInstance : MonoBehaviour
                 }
                 else
                 {
-                    instance.transform.LookAt(collisionEvents[i].intersection + collisionEvents[i].normal);
+                    instance.transform.LookAt(collisionEvents[i].intersection + collisionEvents[i].normal);//intersection 교차
                     instance.transform.rotation *= Quaternion.Euler(rotationOffset);
                 }
+                GetComponent<DamageBox>().ApplyDamage(other.GetComponent<CharacterBase>()); //맞으면 데미지 주는거
                 Destroy(instance, DestroyTimeDelay);
             }
         }
@@ -52,6 +51,5 @@ public class ParticleCollisionInstance : MonoBehaviour
         {
             Destroy(gameObject, DestroyTimeDelay + 0.5f);
         }
-        
     }
 }
