@@ -76,4 +76,28 @@ public static class Extensions
         return ToDirection(new Vector2(horAngle, verAngle));
     }
 
+    public static bool IsOutSide<T>(this T[] targetArray, int index)
+    {
+        return index < 0 || index >= targetArray.Length;
+    }
+
+    public static Vector3 GetRandomPosition(this Vector3 origin, Vector3 minDistance, Vector3 maxDistance)
+    {
+        Vector3 result = origin;
+
+        result.x = Random.Range(minDistance.x, maxDistance.x);
+
+        result.x *= Random.value >= 0.5f ? 1 : -1;
+
+        result.y = Random.Range(minDistance.y, maxDistance.y);
+
+        result.y *= Random.value >= 0.5f ? 1 : -1;
+
+        result.z = Random.Range(minDistance.z, maxDistance.z);
+
+        result.z *= Random.value >= 0.5f ? 1 : -1;
+
+        return result + origin;
+    }
+
 }

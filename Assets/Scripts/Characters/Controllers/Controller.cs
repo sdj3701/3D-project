@@ -17,6 +17,7 @@ public abstract class Controller
         targetCharacter.currentController = this; // 내가 널 조정 하겠다
 
         targetCharacter.ClaimUpdateForward(Control);
+
         return true;
 
 

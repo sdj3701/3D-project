@@ -40,7 +40,7 @@ public class CharacterBase : MonoBehaviour
     public Animator anim {get; protected set;} 
     public AppearanceInfo appearInfo{get; protected set;}
 
-    public Transform focusTarget;// 찾아가는 대상
+    public Transform focusTarget;// 찾아가는 대상 내 위치를 변수로 저장
 
     public Vector3 focusPosistion; // 가려는 정확한 위치
     
@@ -58,6 +58,8 @@ public class CharacterBase : MonoBehaviour
     protected List<GameObject> stepList = new List<GameObject>(); //내가 밟고 있는 녀석들의 리스트
 
     public static CharacterBase playercharacter; 
+
+    public float DestroyTimeDelay = 1.25f; // 죽을 때 사라지는 시간
 
     //땅을 밟고 있는가
     public bool isGround 
@@ -93,7 +95,14 @@ public class CharacterBase : MonoBehaviour
         if(controller == ControllerType.LocalPlayer) //컨트롤러가 == 컨트롤러 타입이 로컬 플레이면은
         {
             playercharacter = this; //플레이어 캐릭터는 나다
+            new PlayerController().Possess(this);
         }
+
+        if(controller == ControllerType.AI_FollowPlayer)
+        {
+            new MonsterController().Possess(this);
+        }
+
         CharacterUpdate += MovementUpdate; //캐릭터가 새로 갱신 한게 있으면 움직이자
         if(appearance) //appearance가 있으면 레퍼런스 안에있는 애니메이션을 불러오고
         {
@@ -110,13 +119,12 @@ public class CharacterBase : MonoBehaviour
         rigid3D = GetComponent<Rigidbody>(); // 초기화
         GameManager.AddPlayer(this); //게임 메니저가 플레이어가 없어 플레이어를 추가 누구를 나를 
         PlayerController.mouseFix = (true); //마우스를 바로 잠금수 있게
-        new PlayerController().Possess(this);
         //Stat.owner = this;
     }
 
     virtual protected void Update()
     {
-        currentController.Control();
+        //currentController.Control();
         transform.position += (moveDirection * Stat.MoveSpeed * Time.deltaTime); //위치에 방향을 더해서 간다 (방향 * 스피드 * 시간)
 
         if(changeFaceOnController) preferedDirection = currentController.direction;
@@ -190,12 +198,14 @@ public class CharacterBase : MonoBehaviour
 
         Stat.HealthCurrent -= damage;
 
-        //anim.SetInteger("animation", 4);
+        anim.SetTrigger("Hit");
+        Debug.Log(damage);
 
         if(Stat.HealthCurrent <= 0)
         {
+            anim.SetTrigger("Die");
             if(Broadcast2Addon != null) Broadcast2Addon("Die");
-            Destroy(gameObject);
+            Destroy(gameObject,DestroyTimeDelay);
         }
         return damage;
     }

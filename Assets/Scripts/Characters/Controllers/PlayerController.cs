@@ -74,7 +74,6 @@ public class PlayerController : Controller
 
         if(InputManager.GetMouseState(MouseCode.LeftClick) == KeyState.Down)
         {
-            
             if(mouseFix)
             {
                 targetCharacter.Attack(InputManager.mouseHitPosition);
