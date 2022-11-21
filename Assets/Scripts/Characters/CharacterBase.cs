@@ -212,8 +212,11 @@ public class CharacterBase : MonoBehaviour
 
     virtual protected void AnimationUpdate()
     {
-        
+        if(controller == ControllerType.LocalPlayer)
+        {
         anim.SetBool("Ground",isGround);
+
+        }
 
         if(moveDirection.magnitude > 0) //이동방향에 거리가 0보다 크면
         {
@@ -228,6 +231,8 @@ public class CharacterBase : MonoBehaviour
 
     public virtual void Jump()
     {
+        if(controller == ControllerType.LocalPlayer)
+        {
         if(isGround)// 땅을 밝고 있어야 점프 가능
         {
             if(rigid3D) //rigidbody에 영향을 받고 있다면
@@ -235,6 +240,7 @@ public class CharacterBase : MonoBehaviour
                 rigid3D.AddForce(Vector3.up * Stat.JumpPower);// 점프를 시켜주는 부분 리지드바디에 힘을추가하면 
                 stepList.Clear(); //점프를 하면 리스트를 지움
             }
+        }
         }
     }
 

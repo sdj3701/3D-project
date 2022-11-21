@@ -267,8 +267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlly: 0
-  _healthCurrent: 0
-  _healthMax: 0
+  _healthCurrent: 10
+  _healthMax: 10
   moveSpeedBase: 0
   _jumpPower: 0
   _attackDamage: 0
