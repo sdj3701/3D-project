@@ -43,17 +43,16 @@ public class CameraFollowByFace : MonoBehaviour
 
     currentRay.origin = transform.position;
 
-    Physics.Raycast(currentRay, out hit, distance);
+    Physics.Raycast(currentRay, out hit, distance, 1);
 
-    if(hit.collider == null)
+    if(hit.collider == null) // 안부딪혔는데 
     {
-        calculatDistance = distance;
+        calculatDistance = distance; //그냥 카메라 볌위 그대로 출력
     }
-    else
+    else 
     {
-        calculatDistance = hit.distance;
+        calculatDistance = hit.distance; // hit를 사용하면 카메라가 가까이 출력됨
     }
-
     transform.position += targetCharacter.FaceDirection * -calculatDistance;
     }
 }

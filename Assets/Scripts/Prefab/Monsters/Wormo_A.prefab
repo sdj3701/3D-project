@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6702959694299805976}
   - component: {fileID: 1212919395286656438}
   - component: {fileID: 2199465588738000588}
-  - component: {fileID: 641476918120332037}
   - component: {fileID: -3291843048023143461}
-  m_Layer: 0
+  - component: {fileID: -93442239208781536}
+  m_Layer: 7
   m_Name: Wormo_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 486650970371614705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4004602309234112223}
@@ -110,35 +110,12 @@ MonoBehaviour:
   isAlly: 0
   _healthCurrent: 10
   _healthMax: 10
-  moveSpeedBase: 0
+  moveSpeedBase: 2
   _jumpPower: 0
   _attackDamage: 0
   _attackDelay: 0
   _attackRange: 0
   moveSpeedMultiplier: 1
---- !u!114 &641476918120332037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486650970371614705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4088e549f2a843d793ab8a07932fe09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  appearance: {fileID: 0}
-  BaseAttack: {fileID: 0}
-  linearDrag: 0
-  controller: 0
-  focusTarget: {fileID: 0}
-  focusPosistion: {x: 0, y: 0, z: 0}
-  ChangeFaceOnmove: 0
-  rotationOnMove: 0
-  changeFaceOnController: 0
-  rotationOnController: 0
-  DestroyTimeDelay: 1.25
 --- !u!54 &-3291843048023143461
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -155,6 +132,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-93442239208781536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486650970371614705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf848faedaa94a5d8dd7679599fc3b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appearance: {fileID: 0}
+  BaseAttack: {fileID: 0}
+  MAtk: {fileID: 0}
+  linearDrag: 0
+  controller: 2
+  focusTarget: {fileID: 0}
+  focusPosistion: {x: 0, y: 0, z: 0}
+  ChangeFaceOnmove: 0
+  rotationOnMove: 0
+  changeFaceOnController: 0
+  rotationOnController: 0
+  DestroyTimeDelay: 1.1
+  maxDistance: 1
 --- !u!1 &3425469105420062641
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5417479514381534041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5402310809644715400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4004602309234112223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5785754808956199809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3911003530528517603}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: rock_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5714281632827764237}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5993542362666972096}
   - component: {fileID: 8025732815952531191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wormo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7925836773825683008}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6357768446974515438}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8828084786121770683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1106825648632321396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -43,8 +43,12 @@ public class MonsterController : Controller
     {
         if(Time.timeScale <= 0 ) return; //시간이 멈춰
 
-        //마우스 고정
-        if(Input.GetKeyDown(KeyCode.Escape)) mouseFix = false;
+        CharacterBase target = GameManager.GetPlayer(0);
+        if(target && (targetCharacter.transform.position - target.transform.position).magnitude < 2) //거리가 1정도면 될까?
+        {
+            targetCharacter.Attack(target);
+        }
+        
 
         if(mouseFix && InputManager.mouseChangePosition.magnitude > 0) //Inputmanager을 사용하기 위해서는 GameManager를 생성하여 사용해야함
         {
@@ -65,8 +69,6 @@ public class MonsterController : Controller
         moveDir.y = 0;
 
         targetCharacter.MoveTo(moveDir);
-        
-        
         
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterStatus))]
 public class CharacterBase : MonoBehaviour
 {
-    private CharacterStatus _stat =null;
+    private CharacterStatus _stat = null;
     //스테이터스를 불러오는 것
     public CharacterStatus Stat 
     {
@@ -34,7 +34,7 @@ public class CharacterBase : MonoBehaviour
     protected float linearDrag;
 
     [SerializeField]
-    protected ControllerType controller; //따라갈 컨트롤러찾기
+    public ControllerType controller;//따라갈 컨트롤러찾기
 
     public Rigidbody rigid3D {get; protected set;}
     public Animator anim {get; protected set;} 
@@ -58,9 +58,13 @@ public class CharacterBase : MonoBehaviour
     protected List<GameObject> stepList = new List<GameObject>(); //내가 밟고 있는 녀석들의 리스트
 
     public static CharacterBase playercharacter; 
+    public CharacterStatus target; //타겟
 
-    public float DestroyTimeDelay = 1.25f; // 죽을 때 사라지는 시간
+    public float DestroyTimeDelay = 1.1f; // 죽을 때 사라지는 시간
+    public float Delay;
+    public float stiff;
 
+/*
     //땅을 밟고 있는가
     public bool isGround 
     {
@@ -73,7 +77,9 @@ public class CharacterBase : MonoBehaviour
             }
             return stepList.Count > 0;
         }
-    }
+    }*/
+
+    bool isGround;
 
     public void RemoveUpdate(System.Action targetAction)
     {
@@ -96,6 +102,7 @@ public class CharacterBase : MonoBehaviour
         {
             playercharacter = this; //플레이어 캐릭터는 나다
             new PlayerController().Possess(this);
+            GameManager.AddPlayer(this); //게임 메니저가 플레이어가 없어 플레이어를 추가 누구를 나를 
         }
 
         if(controller == ControllerType.AI_FollowPlayer)
@@ -117,7 +124,7 @@ public class CharacterBase : MonoBehaviour
         //else anim를 사용하여 값이 잘 보내지는지 확인 해볼수 있음
 
         rigid3D = GetComponent<Rigidbody>(); // 초기화
-        GameManager.AddPlayer(this); //게임 메니저가 플레이어가 없어 플레이어를 추가 누구를 나를 
+
         PlayerController.mouseFix = (true); //마우스를 바로 잠금수 있게
         //Stat.owner = this;
     }
@@ -138,6 +145,19 @@ public class CharacterBase : MonoBehaviour
             transform.LookAt(lookPosition); // 보는 바향으로 움직임
         }
         if(CharacterUpdate != null) CharacterUpdate(); //캐릭터 업데이트가 null이 아니면 캐릭터 업데이트를 불러온다
+
+        Delay -=Time.deltaTime;
+        
+        if(stiff > 0)
+        {
+            stiff -= Time.deltaTime;
+            if(stiff <= 0)
+            {
+             GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+                Debug.Log("1");
+            }    
+
+        }
     }
 
     virtual public void Select(Transform selectTarget)
@@ -161,6 +181,12 @@ public class CharacterBase : MonoBehaviour
 
     virtual protected void Attack()
     {
+        if(Delay >= 0)
+        {
+            return;
+        }
+            Delay = Stat.AttackDelay;
+
         if(controller == ControllerType.LocalPlayer)
         {
             anim.SetTrigger("Attack");
@@ -169,11 +195,11 @@ public class CharacterBase : MonoBehaviour
             //Instantiate에 첫번째 인자는 아까 생성한 BaseAttack 프리팹 오브젝트입니다. 
             //두번째는 오브젝트를 생성할 위치인데 플레이어 기체에서 발사될 것이므로 플레이어 기체의 위치값을 넣습니다. 
             //세번째 마지막은 오브젝트의 회전값입니다. transform.rotation은 회전하는 방향으로 돌아갑니다. 특별히 회전시키지않고 기본으로 사용할 것이므로 Quaternion.identity로 줍니다. 
-
+            fire.GetComponent<DamageBox>().owner = this; // 데미지 박스의 오너의 주인은 누구 인가? 나다
             ParticleCollisionInstance BaseAtk = fire.GetComponent<ParticleCollisionInstance>();
             BaseAtk.from = gameObject;
         }
-         
+
         if(Broadcast2Addon != null) Broadcast2Addon("Attack");
 
     }
@@ -190,22 +216,51 @@ public class CharacterBase : MonoBehaviour
         Attack();
     }
 
+    public virtual void LevelUp()
+    {
+        if(Broadcast2Addon != null) Broadcast2Addon("LevelUp");
+    }
+
     public virtual float ApplyDamage(float damage, CharacterBase from)
     {
+        
         if(Stat.HealthCurrent < damage) damage = Stat.HealthCurrent;
 
         if( damage == 0 ) return 0;
 
         Stat.HealthCurrent -= damage;
+        if(controller == ControllerType.AI_FollowPlayer && damage != 0)
+        {
+            anim.SetTrigger("Hit");
+            if(stiff >= 0)
+            {
+                stiff += 1;
+                GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true; //죽었을 떄 따라오지 못하게 하는 코드
+                
+            }
 
-        anim.SetTrigger("Hit");
-        Debug.Log(damage);
+        }
+
 
         if(Stat.HealthCurrent <= 0)
         {
-            anim.SetTrigger("Die");
-            if(Broadcast2Addon != null) Broadcast2Addon("Die");
-            Destroy(gameObject,DestroyTimeDelay);
+            if(controller == ControllerType.LocalPlayer)
+            {
+                anim.SetTrigger("Die");
+                if(Broadcast2Addon != null) Broadcast2Addon("Die");
+                GetComponent<Collider>().enabled = false; // 충돌 하지 못하게 콜라이더 끄기
+                Destroy(gameObject,DestroyTimeDelay); // 삭제
+            }
+            if(controller == ControllerType.AI_FollowPlayer)
+            {
+                anim.SetTrigger("Die");
+                if(Broadcast2Addon != null) Broadcast2Addon("Die");
+                GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true; //죽었을 떄 따라오지 못하게 하는 코드
+                GetComponent<Collider>().enabled = false; // 충돌 하지 못하게 콜라이더 끄기
+                Destroy(gameObject,DestroyTimeDelay); // 삭제
+                playercharacter.Stat.GetExperience(Stat.value);
+            }
+            
         }
         return damage;
     }
@@ -214,8 +269,7 @@ public class CharacterBase : MonoBehaviour
     {
         if(controller == ControllerType.LocalPlayer)
         {
-        anim.SetBool("Ground",isGround);
-
+            anim.SetBool("Ground",isGround);
         }
 
         if(moveDirection.magnitude > 0) //이동방향에 거리가 0보다 크면
@@ -237,7 +291,7 @@ public class CharacterBase : MonoBehaviour
         {
             if(rigid3D) //rigidbody에 영향을 받고 있다면
             {
-                rigid3D.AddForce(Vector3.up * Stat.JumpPower);// 점프를 시켜주는 부분 리지드바디에 힘을추가하면 
+                rigid3D.AddForce(Vector3.up * Stat.JumpPower, ForceMode.Acceleration );// 점프를 시켜주는 부분 리지드바디에 힘을추가하면 
                 stepList.Clear(); //점프를 하면 리스트를 지움
             }
         }
@@ -245,15 +299,17 @@ public class CharacterBase : MonoBehaviour
     }
 
     //들어오면 추가
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
+        isGround = true;
         //밝고 있지 않으면 새로 추가
-        if(!stepList.Contains(other.gameObject)) stepList.Add(other.gameObject); 
+        //if(!stepList.Contains(other.gameObject)) stepList.Add(other.gameObject); 
     }
 
     private void OnTriggerExit(Collider other) 
     {
-        stepList.Remove(other.gameObject);
+        isGround = false;
+        //stepList.Remove(other.gameObject);
     }
 
 }

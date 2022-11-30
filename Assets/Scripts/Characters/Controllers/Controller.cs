@@ -19,8 +19,6 @@ public abstract class Controller
         targetCharacter.ClaimUpdateForward(Control);
 
         return true;
-
-
    }
 
    public abstract void Control();

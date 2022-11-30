@@ -9,6 +9,16 @@ public class CharacterStatus : MonoBehaviour
     [Header("플레이어와의 동맹")]
     public bool isAlly;
 
+    [Header("경험치, 레벨")]
+    public int value;
+    
+
+    [SerializeField,Tooltip("캐릭터가 현재 레벨을 표사합니다."), InspectorName("레벨")]
+    protected int _level;
+
+    public int Level => _level;
+
+
     [Header("생명력")]
     [SerializeField,Tooltip("캐릭터가 가지고 있는 현재 생명력입니다."), InspectorName("현재 생명력")]
     protected float _healthCurrent;
@@ -89,6 +99,7 @@ public class CharacterStatus : MonoBehaviour
         set{ controlStack = value ? --controlStack : controlStack;}
     }
 
+    public virtual void GetExperience(int value) {}
 
     // Update is called once per frame
     void Update()

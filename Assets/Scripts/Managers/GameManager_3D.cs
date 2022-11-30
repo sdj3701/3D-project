@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager_3D : MonoBehaviour
+public class GameManager_3D : GameManager
 {
     public static int maxWeaponNumber = 5;
     public static int maxPassiveNumber = 5;
 
     //게임의 남은 시간이예요!
-    public static float leftTime;
-    public static float totalTime = 1800;
+    public static float leftTime = 600;
+    public static float totalTime = 600; //30분 60 = 1800
 
     [Header("총 게임 시간")]
     public float setTime;
@@ -26,7 +26,6 @@ public class GameManager_3D : MonoBehaviour
 //     //패시브 정보를 여기에다가 저장해놓도록 할게요!
 //     public static Dictionary<string, PassiveInfo> passiveInfos;
 
-
 //     //얻을 수 있는 업그레이드 중에 3개를 골라서 여기에 놓을 거예요!
 //     public static UpgradeInfo[] selectedUpgrades;
 
@@ -39,19 +38,19 @@ public class GameManager_3D : MonoBehaviour
 //     //무기가 맘에 안들면 다시 돌립시다!
 //     public static int rerollLeft;
 
-//     //게임 시작을 알리기!
-//     public static bool GameStart = false;
+    //게임 시작을 알리기!
+    public static bool GameStart = true;
 
 //     public static Addon_Weapon_VS GetPlayerWeapon(int index)
 //     {
 //         return GetPlayer(index)?.GetAddon<Addon_Weapon_VS>();
 //     }
 
-//     public override void Update()
-//     {
-//         base.Update();
-//         if (GameStart) leftTime -= Time.deltaTime;
-//     }
+    public override void Update()
+    {
+        base.Update();
+        if (GameStart) leftTime -= Time.deltaTime;
+    }
 
 //     //게임매니저를 초기화할 수 있게 합니다!
 //     public override void Initialize()
