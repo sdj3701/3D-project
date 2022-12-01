@@ -22,6 +22,12 @@ public class Character_Nav : CharacterBase
 
         //저쪽으로 가야해
         agent.SetDestination(wantValue);
+        
+        if(stiff > 0 )
+        {
+            wantValue = new Vector3(0,0,0);
+            agent.SetDestination(wantValue);
+        }
     }
 
     protected override void MovementUpdate()
@@ -48,6 +54,8 @@ public class Character_Nav : CharacterBase
         {
             physicsDirection = Vector3.zero;
         }
+
+        
     }
 }
 //내비를 사용하기 위해서는 유니티 윈도우에서 AI 내비를 들어가서 bake를 눌러주면 됨

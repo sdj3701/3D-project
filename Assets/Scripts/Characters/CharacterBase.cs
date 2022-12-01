@@ -62,7 +62,7 @@ public class CharacterBase : MonoBehaviour
 
     public float DestroyTimeDelay = 1.1f; // 죽을 때 사라지는 시간
     public float Delay;
-    public float stiff;
+    public float stiff; //경직
 
 /*
     //땅을 밟고 있는가
@@ -153,10 +153,8 @@ public class CharacterBase : MonoBehaviour
             stiff -= Time.deltaTime;
             if(stiff <= 0)
             {
-             GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
-                Debug.Log("1");
+                GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
             }    
-
         }
     }
 
@@ -201,7 +199,6 @@ public class CharacterBase : MonoBehaviour
         }
 
         if(Broadcast2Addon != null) Broadcast2Addon("Attack");
-
     }
 
     virtual public void Attack(Vector3 wantPosition)
@@ -238,9 +235,7 @@ public class CharacterBase : MonoBehaviour
                 GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true; //죽었을 떄 따라오지 못하게 하는 코드
                 
             }
-
         }
-
 
         if(Stat.HealthCurrent <= 0)
         {
@@ -260,7 +255,6 @@ public class CharacterBase : MonoBehaviour
                 Destroy(gameObject,DestroyTimeDelay); // 삭제
                 playercharacter.Stat.GetExperience(Stat.value);
             }
-            
         }
         return damage;
     }

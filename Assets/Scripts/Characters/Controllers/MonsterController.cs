@@ -62,13 +62,13 @@ public class MonsterController : Controller
 
         Vector3 moveDir = new Vector3();
 
-        moveDir += horizontalAngle.ToDirection() * InputManager.moveDirection.y; //가려는 수평 방향 방향키 누른 위치
-        moveDir += (horizontalAngle - 90.0f).ToDirection() * InputManager.moveDirection.x; // 가려는 오른쪽 방향
+        // moveDir += horizontalAngle.ToDirection() * InputManager.moveDirection.y; //가려는 수평 방향 방향키 누른 위치
+        // moveDir += (horizontalAngle - 90.0f).ToDirection() * InputManager.moveDirection.x; // 가려는 오른쪽 방향
 
-        moveDir.z = moveDir.y; //y와 z를 바꾸기 y는 3d에서는 점프 이기 때문에
-        moveDir.y = 0;
+        // moveDir.z = moveDir.y; //y와 z를 바꾸기 y는 3d에서는 점프 이기 때문에
+        // moveDir.y = 0;
+        moveDir = targetCharacter.transform.position; //플레이어를 따라 가게 했음
 
         targetCharacter.MoveTo(moveDir);
-        
     }
 }
