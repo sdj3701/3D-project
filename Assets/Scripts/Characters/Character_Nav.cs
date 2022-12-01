@@ -23,10 +23,9 @@ public class Character_Nav : CharacterBase
         //저쪽으로 가야해
         agent.SetDestination(wantValue);
         
-        if(stiff > 0 )
+        if(stiff > 0)
         {
-            wantValue = new Vector3(0,0,0);
-            agent.SetDestination(wantValue);
+            agent.SetDestination(transform.position);
         }
     }
 

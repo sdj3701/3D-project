@@ -174,7 +174,7 @@ public class CharacterBase : MonoBehaviour
     {
         if(!Stat.movable || !Stat.actable) moveDirection = Vector3.zero;
 
-        Vector3 totalDirection = (moveDirection * Mathf.Max(Stat.MoveSpeed, 0)) +physicsDirection;
+        Vector3 totalDirection = (moveDirection * Mathf.Max(Stat.MoveSpeed, 0)) + physicsDirection;
     }
 
     virtual protected void Attack()
@@ -226,14 +226,13 @@ public class CharacterBase : MonoBehaviour
         if( damage == 0 ) return 0;
 
         Stat.HealthCurrent -= damage;
-        if(controller == ControllerType.AI_FollowPlayer && damage != 0)
+        if(controller == ControllerType.AI_FollowPlayer && Stat.HealthCurrent >= 0)
         {
             anim.SetTrigger("Hit");
-            if(stiff >= 0)
+            if(stiff <= 0)
             {
                 stiff += 1;
                 GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true; //죽었을 떄 따라오지 못하게 하는 코드
-                
             }
         }
 
@@ -274,21 +273,20 @@ public class CharacterBase : MonoBehaviour
         {
             anim.SetFloat("Velocity",0f);
         }
-        
     }
 
     public virtual void Jump()
     {
         if(controller == ControllerType.LocalPlayer)
         {
-        if(isGround)// 땅을 밝고 있어야 점프 가능
-        {
-            if(rigid3D) //rigidbody에 영향을 받고 있다면
+            if(isGround)// 땅을 밝고 있어야 점프 가능
             {
-                rigid3D.AddForce(Vector3.up * Stat.JumpPower, ForceMode.Acceleration );// 점프를 시켜주는 부분 리지드바디에 힘을추가하면 
-                stepList.Clear(); //점프를 하면 리스트를 지움
+                if(rigid3D) //rigidbody에 영향을 받고 있다면
+                {
+                    rigid3D.AddForce(Vector3.up * Stat.JumpPower, ForceMode.Acceleration );// 점프를 시켜주는 부분 리지드바디에 힘을추가하면 
+                    stepList.Clear(); //점프를 하면 리스트를 지움
+                }
             }
-        }
         }
     }
 
@@ -305,5 +303,4 @@ public class CharacterBase : MonoBehaviour
         isGround = false;
         //stepList.Remove(other.gameObject);
     }
-
 }
