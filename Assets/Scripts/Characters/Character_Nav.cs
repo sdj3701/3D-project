@@ -16,12 +16,22 @@ public class Character_Nav : CharacterBase
 
     public override void MoveTo(Vector3 wantValue)
     {
+        wantValue = playercharacter.transform.position; //이걸 사용하면 속도 이상이 생김
         //이쪽을 보면 되는 건가?
         moveDirection = (wantValue - transform.position).normalized;
         preferedDirection = moveDirection.normalized;
 
         //저쪽으로 가야해
         agent.SetDestination(wantValue);
+
+        if(moveDirection.magnitude > 0) //이동방향에 거리가 0보다 크면
+        {
+            anim.SetFloat("Velocity",1f);
+        }
+        else
+        {
+            anim.SetFloat("Velocity",0f);
+        }
         
         if(stiff > 0)
         {
@@ -34,10 +44,10 @@ public class Character_Nav : CharacterBase
         //목적지 설정 (그쪽으로 가기)
         if(!Stat.movable || !Stat.actable) agent.SetDestination(transform.position);
 
-        if(playercharacter != null) //플레이어 캐릭터가 있으면 
-        {
-            agent.SetDestination(playercharacter.transform.position); //에이전트는 가야한다 (플레이어 캐릭터의 위치로)
-        }
+        // if(playercharacter != null) //플레이어 캐릭터가 있으면 
+        // {
+        //     agent.SetDestination(playercharacter.transform.position); //에이전트는 가야한다 (플레이어 캐릭터의 위치로)
+        // }
         //이동은 NavMexh가 해줌 그래서 물리 작용만 계산하기
         Vector3 totalDirection = physicsDirection * Time.deltaTime;
 
@@ -53,7 +63,7 @@ public class Character_Nav : CharacterBase
         {
             physicsDirection = Vector3.zero;
         }
-
+        //AnimationUpdate();
         
     }
 }

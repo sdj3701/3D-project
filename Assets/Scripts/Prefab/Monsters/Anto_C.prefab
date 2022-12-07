@@ -1091,7 +1091,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1116,6 +1116,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlly: 0
+  value: 0
+  _level: 0
   _healthCurrent: 10
   _healthMax: 10
   moveSpeedBase: 2
@@ -1154,7 +1156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appearance: {fileID: 0}
   BaseAttack: {fileID: 0}
-  MAtk: {fileID: 0}
   linearDrag: 0
   controller: 2
   focusTarget: {fileID: 0}
@@ -1163,7 +1164,12 @@ MonoBehaviour:
   rotationOnMove: 0
   changeFaceOnController: 0
   rotationOnController: 0
+  target: {fileID: 0}
   DestroyTimeDelay: 1.1
+  Delay: 0
+  stiff: 0
+  hudDamageText: {fileID: 0}
+  hudPos: {fileID: 0}
   maxDistance: 1
 --- !u!1 &8675795274329711703
 GameObject:

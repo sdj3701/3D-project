@@ -64,6 +64,9 @@ public class CharacterBase : MonoBehaviour
     public float Delay;
     public float stiff; //경직
 
+    public GameObject hudDamageText;
+    public Transform hudPos;
+
 /*
     //땅을 밟고 있는가
     public bool isGround 
@@ -177,6 +180,21 @@ public class CharacterBase : MonoBehaviour
         Vector3 totalDirection = (moveDirection * Mathf.Max(Stat.MoveSpeed, 0)) + physicsDirection;
     }
 
+    virtual protected void Skill()
+    {
+        if(Delay >= 0)
+        {
+            return;
+        }
+        Delay = 10;
+
+        if(controller == ControllerType.AI_FollowPlayer)
+        {
+            anim.SetTrigger("Skill");
+
+        }
+    }
+
     virtual protected void Attack()
     {
         if(Delay >= 0)
@@ -226,6 +244,7 @@ public class CharacterBase : MonoBehaviour
         if( damage == 0 ) return 0;
 
         Stat.HealthCurrent -= damage;
+        
         if(controller == ControllerType.AI_FollowPlayer && Stat.HealthCurrent >= 0)
         {
             anim.SetTrigger("Hit");
