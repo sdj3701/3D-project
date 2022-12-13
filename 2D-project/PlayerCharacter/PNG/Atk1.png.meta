@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 5bc1c6357536740f391cad25c815420c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: damage_20
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 506
+        width: 28
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e51b52f327e74425b646f9716587105
+      internalID: -1243870202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 506
+        width: 35
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94b0a2ad54e34716adf336a7b22108a
+      internalID: -1777344686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 505
+        width: 39
+        height: 169
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f1986221a2b4462813ba1146470b87
+      internalID: -1834699431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_23
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 506
+        width: 69
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f637399086494c9190de392e3c927e5
+      internalID: 1090265272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 337
+        width: 63
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033d2c979a283408daf675faabaf47c4
+      internalID: -1106834254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 337
+        width: 59
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d8003ea224f48518a6fd31aca727c2
+      internalID: -966611028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 337
+        width: 64
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1433e2614551546d0a5e58a975f80893
+      internalID: -2007687562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      damage_13: -1109028553
+      damage_24: -1106834254
+      damage_16: 1818293885
+      damage_23: 1090265272
+      damage_49: 334827713
+      damage_32: 436373414
+      damage_31: -2037590698
+      damage_50: 1289224460
+      damage_11: -419190119
+      damage_1: 1703621282
+      damage_20: -1243870202
+      damage_19: -910555384
+      damage_48: -1324850992
+      damage_6: -1267576326
+      damage_44: -1743853587
+      damage_34: 416419751
+      damage_36: -577023755
+      damage_47: 1051520906
+      damage_39: 319487792
+      damage_46: -470122548
+      damage_25: -966611028
+      damage_22: -1834699431
+      damage_52: 645339471
+      damage_2: -1806147141
+      damage_33: 784234219
+      damage_7: -2116707737
+      damage_14: -535832936
+      damage_27: 1082503555
+      damage_38: -1900278049
+      damage_51: 1131310543
+      damage_26: -2007687562
+      damage_10: -1837390965
+      damage_43: 1648272719
+      damage_9: 1899190983
+      damage_3: -177950077
+      damage_28: 1577506647
+      damage_4: -502460022
+      damage_30: -426557856
+      damage_29: 1754752427
+      damage_5: 1438616817
+      damage_0: 1973957354
+      damage_12: 1175061335
+      damage_21: -1777344686
+      damage_18: -1677744480
+      damage_8: -879963315
+      damage_53: 1511924738
+      damage_15: 1664066509
+      damage_17: 151722662
+      damage_37: 249065077
+      damage_42: -1462834653
+      damage_35: 1758335390
+      damage_45: 1706514888
+      damage_40: -1958615681
+      damage_41: -1348858854
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

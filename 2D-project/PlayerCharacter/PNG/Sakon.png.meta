@@ -1,0 +1,2066 @@
+fileFormatVersion: 2
+guid: aef54d7e7740a8d459789556a50b1c67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7822181100443162510
+    second: Sakon_0
+  - first:
+      213: -7009665859100046881
+    second: Sakon_1
+  - first:
+      213: -8105103222178108902
+    second: Sakon_2
+  - first:
+      213: -953223638591144328
+    second: Sakon_3
+  - first:
+      213: 6178324109316971057
+    second: Sakon_4
+  - first:
+      213: -8896154947747457308
+    second: Sakon_5
+  - first:
+      213: -2517778835506411039
+    second: Sakon_6
+  - first:
+      213: -4444126282168028929
+    second: Sakon_7
+  - first:
+      213: -1558989657131173685
+    second: Sakon_8
+  - first:
+      213: -4054978059921460834
+    second: Sakon_9
+  - first:
+      213: -5924698672384629374
+    second: Sakon_10
+  - first:
+      213: -7587409638806676281
+    second: Sakon_11
+  - first:
+      213: 8858293798641610813
+    second: Sakon_12
+  - first:
+      213: 3038263560942357839
+    second: Sakon_13
+  - first:
+      213: -2882000537521188336
+    second: Sakon_14
+  - first:
+      213: 1618983610915595556
+    second: Sakon_15
+  - first:
+      213: 5785296872911190714
+    second: Sakon_16
+  - first:
+      213: -1328502036313845345
+    second: Sakon_17
+  - first:
+      213: -4836777390121771157
+    second: Sakon_18
+  - first:
+      213: 5423515186835088631
+    second: Sakon_19
+  - first:
+      213: -7704349630448066333
+    second: Sakon_20
+  - first:
+      213: -7617944485450692047
+    second: Sakon_21
+  - first:
+      213: -3979404642352971843
+    second: Sakon_22
+  - first:
+      213: 478758215972624993
+    second: Sakon_23
+  - first:
+      213: 5853800844779023002
+    second: Sakon_24
+  - first:
+      213: -8762406416513128797
+    second: Sakon_25
+  - first:
+      213: -1615208062722517872
+    second: Sakon_26
+  - first:
+      213: 3155863012809665589
+    second: Sakon_27
+  - first:
+      213: 4260226835533753312
+    second: Sakon_28
+  - first:
+      213: 7927984449457868429
+    second: Sakon_29
+  - first:
+      213: -4170310898659493778
+    second: Sakon_30
+  - first:
+      213: 167319625050063516
+    second: Sakon_31
+  - first:
+      213: -7560698069451969760
+    second: Sakon_32
+  - first:
+      213: 5978393844054822219
+    second: Sakon_33
+  - first:
+      213: 6735405509127059669
+    second: Sakon_34
+  - first:
+      213: -5857778169628235944
+    second: Sakon_35
+  - first:
+      213: 3376784689518322669
+    second: Sakon_36
+  - first:
+      213: -6758906578668027512
+    second: Sakon_37
+  - first:
+      213: -8613164874898737944
+    second: Sakon_38
+  - first:
+      213: 2677184074173382603
+    second: Sakon_39
+  - first:
+      213: 5041952389243168823
+    second: Sakon_40
+  - first:
+      213: -1837069455850243127
+    second: Sakon_41
+  - first:
+      213: -2073328312527250772
+    second: Sakon_42
+  - first:
+      213: -2532634330136914388
+    second: Sakon_43
+  - first:
+      213: 7975505342412287916
+    second: Sakon_44
+  - first:
+      213: -6611225356496428352
+    second: Sakon_45
+  - first:
+      213: -4276826234503882666
+    second: Sakon_46
+  - first:
+      213: 5073789017356212673
+    second: Sakon_47
+  - first:
+      213: 4247695935793762500
+    second: Sakon_48
+  - first:
+      213: -4796538479454401186
+    second: Sakon_49
+  - first:
+      213: -6162289605457790764
+    second: Sakon_50
+  - first:
+      213: 7300964907380622574
+    second: Sakon_51
+  - first:
+      213: 4222243342573732770
+    second: Sakon_52
+  - first:
+      213: -8404740370623757825
+    second: Sakon_85
+  - first:
+      213: -8420497662171436759
+    second: Sakon_86
+  - first:
+      213: 5475904842004996569
+    second: Sakon_87
+  - first:
+      213: 2015324278244172754
+    second: Sakon_88
+  - first:
+      213: 1443804297075647100
+    second: Sakon_89
+  - first:
+      213: -7329505358388153113
+    second: Sakon_90
+  - first:
+      213: 2856866110219776452
+    second: Sakon_107
+  - first:
+      213: -7546556154615367267
+    second: Sakon_108
+  - first:
+      213: 7143723072497817616
+    second: Sakon_109
+  - first:
+      213: 3360697575382115520
+    second: Sakon_110
+  - first:
+      213: 2744886599084359193
+    second: Sakon_111
+  - first:
+      213: -6621681309306577047
+    second: Sakon_112
+  - first:
+      213: -4992663199514346198
+    second: Sakon_113
+  - first:
+      213: 3883683147001196145
+    second: Sakon_114
+  - first:
+      213: -3679384868064543618
+    second: Sakon_115
+  - first:
+      213: -1104252662114554976
+    second: Sakon_116
+  - first:
+      213: -8196893172799477652
+    second: Sakon_117
+  - first:
+      213: 6607031198516927670
+    second: Sakon_118
+  - first:
+      213: -6971748206211534817
+    second: Sakon_119
+  - first:
+      213: 5877029504172817014
+    second: Sakon_120
+  - first:
+      213: 5601813634616912275
+    second: Sakon_121
+  - first:
+      213: -2309564127123726964
+    second: Sakon_122
+  - first:
+      213: -6486647706979625480
+    second: Sakon_123
+  - first:
+      213: 2036343249080864527
+    second: Sakon_124
+  - first:
+      213: -9038976680476713250
+    second: Sakon_125
+  - first:
+      213: -6924866064530621537
+    second: Sakon_126
+  - first:
+      213: -7732447486436130225
+    second: Sakon_127
+  - first:
+      213: 2621055594651518016
+    second: Sakon_128
+  - first:
+      213: 1250028126978423564
+    second: Sakon_129
+  - first:
+      213: -3659565895056102188
+    second: Sakon_130
+  - first:
+      213: -4538096338678399198
+    second: Sakon_131
+  - first:
+      213: -6227588100531405108
+    second: Sakon_132
+  - first:
+      213: 7711154964013943738
+    second: Sakon_133
+  - first:
+      213: 7912090762326786176
+    second: Sakon_134
+  - first:
+      213: -9165863317824100799
+    second: Sakon_135
+  - first:
+      213: 5787231590596893561
+    second: Sakon_136
+  - first:
+      213: -9092730123568785938
+    second: Sakon_137
+  - first:
+      213: 4042485758559550703
+    second: Sakon_138
+  - first:
+      213: 303858955638564042
+    second: Sakon_139
+  - first:
+      213: -4410908998882719610
+    second: Sakon_140
+  - first:
+      213: -7680625591473515682
+    second: Sakon_141
+  - first:
+      213: -8434979904490795138
+    second: Sakon_142
+  - first:
+      213: 8107118484077909599
+    second: Sakon_143
+  - first:
+      213: 7386872566640678548
+    second: Sakon_144
+  - first:
+      213: -3295177902146331346
+    second: Sakon_145
+  - first:
+      213: -3388490482977843987
+    second: Sakon_146
+  - first:
+      213: 9026099825599010712
+    second: Sakon_147
+  - first:
+      213: 5816954329195179591
+    second: Sakon_148
+  - first:
+      213: 5548495090080114124
+    second: Sakon_149
+  - first:
+      213: 3059974236833806487
+    second: Sakon_150
+  - first:
+      213: 5477334914304805529
+    second: Sakon_151
+  - first:
+      213: 6229428330364284277
+    second: Sakon_152
+  - first:
+      213: -3899705295558414078
+    second: Sakon_153
+  - first:
+      213: 7223781935273476422
+    second: Sakon_154
+  - first:
+      213: -1041541467123722725
+    second: Sakon_155
+  - first:
+      213: -4377280497921337412
+    second: Sakon_156
+  - first:
+      213: -2290316015033655534
+    second: Sakon_157
+  - first:
+      213: 2941111225643569798
+    second: Sakon_158
+  - first:
+      213: -5077595057381138374
+    second: Sakon_159
+  - first:
+      213: 1555619440711220960
+    second: Sakon_160
+  - first:
+      213: -4903523278970934729
+    second: Sakon_161
+  - first:
+      213: -6733386772535088055
+    second: Sakon_162
+  - first:
+      213: -1044060108285867565
+    second: Sakon_163
+  - first:
+      213: -7777864649753853653
+    second: Sakon_164
+  - first:
+      213: -6332166702723256478
+    second: Sakon_165
+  - first:
+      213: 3826721075521136808
+    second: Sakon_166
+  - first:
+      213: -505626217740499828
+    second: Sakon_167
+  - first:
+      213: 6306142558180981157
+    second: Sakon_168
+  - first:
+      213: 1703094992419240302
+    second: Sakon_169
+  - first:
+      213: 37681243517350896
+    second: Sakon_170
+  - first:
+      213: -4828282541364833566
+    second: Sakon_171
+  - first:
+      213: -2388246458104453499
+    second: Sakon_172
+  - first:
+      213: 2462430166329171198
+    second: Sakon_173
+  - first:
+      213: 4340936890207874934
+    second: Sakon_174
+  - first:
+      213: 7606697706323117294
+    second: Sakon_175
+  - first:
+      213: -5757049694570224912
+    second: Sakon_176
+  - first:
+      213: 4622384094976358544
+    second: Sakon_177
+  - first:
+      213: 6893952362387864858
+    second: Sakon_178
+  - first:
+      213: -5278779239515597876
+    second: Sakon_179
+  - first:
+      213: -4807999402075439070
+    second: Sakon_180
+  - first:
+      213: -3814752166764010284
+    second: Sakon_181
+  - first:
+      213: 1753521882152941280
+    second: Sakon_182
+  - first:
+      213: -967443438099275876
+    second: Sakon_183
+  - first:
+      213: 1856618222409545687
+    second: Sakon_184
+  - first:
+      213: -6204654881584034274
+    second: Sakon_185
+  - first:
+      213: -6442116623978699993
+    second: Sakon_186
+  - first:
+      213: 3682877870606406905
+    second: Sakon_187
+  - first:
+      213: -5025579042818672577
+    second: Sakon_188
+  - first:
+      213: -6432967477495266594
+    second: Sakon_189
+  - first:
+      213: -366346995889200811
+    second: Sakon_190
+  - first:
+      213: 4609261179357238696
+    second: Sakon_191
+  - first:
+      213: -8231966121403372269
+    second: Sakon_192
+  - first:
+      213: -3472805062766331826
+    second: Sakon_193
+  - first:
+      213: -3314541094131101879
+    second: Sakon_194
+  - first:
+      213: 7330720911126930901
+    second: Sakon_195
+  - first:
+      213: -6063077098196942408
+    second: Sakon_196
+  - first:
+      213: -7117256154435716303
+    second: Sakon_197
+  - first:
+      213: -809327299833974190
+    second: Sakon_198
+  - first:
+      213: 3358840878266031789
+    second: Sakon_199
+  - first:
+      213: 758010241108820699
+    second: Sakon_200
+  - first:
+      213: -560162898372907405
+    second: Sakon_201
+  - first:
+      213: 2800150138433216919
+    second: Sakon_202
+  - first:
+      213: -4289589091496860709
+    second: Sakon_203
+  - first:
+      213: -4448801912177920630
+    second: Sakon_204
+  - first:
+      213: -1245661397595761186
+    second: Sakon_205
+  - first:
+      213: -2510059870621558780
+    second: Sakon_206
+  - first:
+      213: -6559031155473448277
+    second: Sakon_207
+  - first:
+      213: 8685470544320377950
+    second: Sakon_208
+  - first:
+      213: -3726880961176507438
+    second: Sakon_209
+  - first:
+      213: -4093527490509127138
+    second: Sakon_210
+  - first:
+      213: -4014523956843111858
+    second: Sakon_211
+  - first:
+      213: -8689277809106864184
+    second: Sakon_212
+  - first:
+      213: -4078724185762157055
+    second: Sakon_213
+  - first:
+      213: 6376212840786726174
+    second: Sakon_214
+  - first:
+      213: 8674770754124907543
+    second: Sakon_215
+  - first:
+      213: -4378463794545314422
+    second: Sakon_216
+  - first:
+      213: 6582440607309389329
+    second: Sakon_217
+  - first:
+      213: 2341535018629567280
+    second: Sakon_218
+  - first:
+      213: -4160069420505369874
+    second: Sakon_219
+  - first:
+      213: -3943971574707333417
+    second: Sakon_220
+  - first:
+      213: -4718127631119833997
+    second: Sakon_221
+  - first:
+      213: -4596445355489817413
+    second: Sakon_222
+  - first:
+      213: -7467953083920360337
+    second: Sakon_223
+  - first:
+      213: -1314945863113551368
+    second: Sakon_224
+  - first:
+      213: 1648035257560816391
+    second: Sakon_225
+  - first:
+      213: 1752832439791080706
+    second: Sakon_226
+  - first:
+      213: 6069226232661661529
+    second: Sakon_227
+  - first:
+      213: 8554052523589973950
+    second: Sakon_228
+  - first:
+      213: 5771152524722902080
+    second: Sakon_229
+  - first:
+      213: 4406783851802758783
+    second: Sakon_230
+  - first:
+      213: 7118340838965956897
+    second: Sakon_231
+  - first:
+      213: 2451038063719754379
+    second: Sakon_232
+  - first:
+      213: 2537073420605817730
+    second: Sakon_233
+  - first:
+      213: 7059557759822263169
+    second: Sakon_234
+  - first:
+      213: -4295946992674300402
+    second: Sakon_235
+  - first:
+      213: 5966832193563345409
+    second: Sakon_236
+  - first:
+      213: 4053442721978563209
+    second: Sakon_237
+  - first:
+      213: 7275044213584887484
+    second: Sakon_238
+  - first:
+      213: 4492356798328382676
+    second: Sakon_239
+  - first:
+      213: 4621355606509203415
+    second: Sakon_240
+  - first:
+      213: 1143412311602098782
+    second: Sakon_241
+  - first:
+      213: 1382173369544746520
+    second: Sakon_242
+  - first:
+      213: 2738233451602162045
+    second: Sakon_243
+  - first:
+      213: -2125493089716245544
+    second: Sakon_244
+  - first:
+      213: 1149206090058620342
+    second: Sakon_245
+  - first:
+      213: -6486471198661567163
+    second: Sakon_246
+  - first:
+      213: 2754270697932157558
+    second: Sakon_247
+  - first:
+      213: 4623775513810333236
+    second: Sakon_248
+  - first:
+      213: 8067688635338852426
+    second: Sakon_249
+  - first:
+      213: -853949035012528585
+    second: Sakon_250
+  - first:
+      213: 8174400555770000334
+    second: Sakon_251
+  - first:
+      213: 9103416606362055194
+    second: Sakon_252
+  - first:
+      213: -5970700057497760064
+    second: Sakon_253
+  - first:
+      213: -3949141614092087292
+    second: Sakon_254
+  - first:
+      213: 4438094120565180036
+    second: Sakon_255
+  - first:
+      213: -8407691227176918885
+    second: Sakon_256
+  - first:
+      213: 5264764797005090677
+    second: Sakon_257
+  - first:
+      213: 7363409007576999038
+    second: Sakon_258
+  - first:
+      213: 2415646778129264555
+    second: Sakon_259
+  - first:
+      213: -6260917622169256372
+    second: Sakon_260
+  - first:
+      213: 2207881700545649604
+    second: Sakon_261
+  - first:
+      213: 215688735193181154
+    second: Sakon_262
+  - first:
+      213: -2451567613177747272
+    second: Sakon_263
+  - first:
+      213: -2966683135698768242
+    second: Sakon_264
+  - first:
+      213: -3120140438397888923
+    second: Sakon_265
+  - first:
+      213: -3271108792361762296
+    second: Sakon_266
+  - first:
+      213: -5029876356295139700
+    second: Sakon_267
+  - first:
+      213: -6594492921390774586
+    second: Sakon_268
+  - first:
+      213: -2187603091357178615
+    second: Sakon_269
+  - first:
+      213: -5493858776386290929
+    second: Sakon_270
+  - first:
+      213: -6303629130399356479
+    second: Sakon_271
+  - first:
+      213: 4052558829485927478
+    second: Sakon_272
+  - first:
+      213: -8021460561517737778
+    second: Sakon_273
+  - first:
+      213: 4984808098570723629
+    second: Sakon_274
+  - first:
+      213: -6120144128269209970
+    second: Sakon_275
+  - first:
+      213: -703390114835940368
+    second: Sakon_276
+  - first:
+      213: 7547734765556068148
+    second: Sakon_277
+  - first:
+      213: 2552099020837164693
+    second: Sakon_278
+  - first:
+      213: -2112247283975439444
+    second: Sakon_279
+  - first:
+      213: 6806503613930501141
+    second: Sakon_280
+  - first:
+      213: 8844196579225766919
+    second: Sakon_281
+  - first:
+      213: 1029174987075118467
+    second: Sakon_282
+  - first:
+      213: 8969188365207168166
+    second: Sakon_283
+  - first:
+      213: 8785677341282929579
+    second: Sakon_284
+  - first:
+      213: -656819915592777108
+    second: Sakon_285
+  - first:
+      213: 5647167681398891254
+    second: Sakon_286
+  - first:
+      213: 1197694436460941641
+    second: Sakon_287
+  - first:
+      213: 3084849439338408785
+    second: Sakon_288
+  - first:
+      213: -404066601951264031
+    second: Sakon_289
+  - first:
+      213: -7026405219042076855
+    second: Sakon_290
+  - first:
+      213: 6605969312417797404
+    second: Sakon_291
+  - first:
+      213: -2938867219668728749
+    second: Sakon_292
+  - first:
+      213: -2494272650320425090
+    second: Sakon_293
+  - first:
+      213: -8874107300640218205
+    second: Sakon_294
+  - first:
+      213: -786148549408017136
+    second: Sakon_295
+  - first:
+      213: -7455660610618829797
+    second: Sakon_296
+  - first:
+      213: -8772339503689477255
+    second: Sakon_297
+  - first:
+      213: -4264346031308470697
+    second: Sakon_298
+  - first:
+      213: -1152029708292108742
+    second: Sakon_299
+  - first:
+      213: -6907181366087017592
+    second: Sakon_300
+  - first:
+      213: -2821742004071396099
+    second: Sakon_301
+  - first:
+      213: 8397646466638220410
+    second: Sakon_302
+  - first:
+      213: 8584588497916749127
+    second: Sakon_303
+  - first:
+      213: 4331572151108920298
+    second: Sakon_304
+  - first:
+      213: 1433125464070300747
+    second: Sakon_305
+  - first:
+      213: 3785502911696677584
+    second: Sakon_306
+  - first:
+      213: 2752263352994102277
+    second: Sakon_307
+  - first:
+      213: -6051360346115201799
+    second: Sakon_308
+  - first:
+      213: 9119682191885613609
+    second: Sakon_309
+  - first:
+      213: 8981358644792974789
+    second: Sakon_310
+  - first:
+      213: -3903872334526603397
+    second: Sakon_311
+  - first:
+      213: 6713055368348434591
+    second: Sakon_312
+  - first:
+      213: -4927903841467301542
+    second: Sakon_313
+  - first:
+      213: 3808774847725214996
+    second: Sakon_314
+  - first:
+      213: -5322877361078233250
+    second: Sakon_315
+  - first:
+      213: -116077052331030255
+    second: Sakon_316
+  - first:
+      213: -2811996254316333298
+    second: Sakon_317
+  - first:
+      213: 2734330331445905122
+    second: Sakon_318
+  - first:
+      213: 3686349527485798504
+    second: Sakon_319
+  - first:
+      213: 4958075483875179861
+    second: Sakon_320
+  - first:
+      213: -3659724996849804520
+    second: Sakon_321
+  - first:
+      213: -2930966373516791394
+    second: Sakon_322
+  - first:
+      213: 4384099129179836249
+    second: Sakon_323
+  - first:
+      213: 693978326289806509
+    second: Sakon_324
+  - first:
+      213: 4706005979854791885
+    second: Sakon_325
+  - first:
+      213: -3948274553336096484
+    second: Sakon_326
+  - first:
+      213: -4564919763103879503
+    second: Sakon_327
+  - first:
+      213: -3782771551797764798
+    second: Sakon_328
+  - first:
+      213: 7850686927294286385
+    second: Sakon_329
+  - first:
+      213: 6674143576508186559
+    second: Sakon_330
+  - first:
+      213: -2553739914261289905
+    second: Sakon_331
+  - first:
+      213: -5875205504698052493
+    second: Sakon_332
+  - first:
+      213: 8916044293297750047
+    second: Sakon_333
+  - first:
+      213: 1356869596385353583
+    second: Sakon_334
+  - first:
+      213: -5070197921472461437
+    second: Sakon_335
+  - first:
+      213: 5822902690360590266
+    second: Sakon_336
+  - first:
+      213: -5049367860461291603
+    second: Sakon_337
+  - first:
+      213: -6479074613379095823
+    second: Sakon_338
+  - first:
+      213: -2390880897446538898
+    second: Sakon_339
+  - first:
+      213: 8707530635978452489
+    second: Sakon_340
+  - first:
+      213: 1982037920669935254
+    second: Sakon_341
+  - first:
+      213: -7501972863065410464
+    second: Sakon_342
+  - first:
+      213: 910997948953406486
+    second: Sakon_343
+  - first:
+      213: 4154328672179702138
+    second: Sakon_344
+  - first:
+      213: 1766962243742241221
+    second: Sakon_345
+  - first:
+      213: -7267654070495297728
+    second: Sakon_346
+  - first:
+      213: 3398839156254498353
+    second: Sakon_347
+  - first:
+      213: -5205895319892057183
+    second: Sakon_348
+  - first:
+      213: 5831986512714715517
+    second: Sakon_349
+  - first:
+      213: 8593227246976484236
+    second: Sakon_350
+  - first:
+      213: -2820091646133949090
+    second: Sakon_351
+  - first:
+      213: -7236103358322883694
+    second: Sakon_352
+  - first:
+      213: 5639845010827470319
+    second: Sakon_353
+  - first:
+      213: -6754999367317869648
+    second: Sakon_354
+  - first:
+      213: -1362739531598724966
+    second: Sakon_355
+  - first:
+      213: -4716232572042556604
+    second: Sakon_356
+  - first:
+      213: -4536859225637050867
+    second: Sakon_357
+  - first:
+      213: -2561886049688491866
+    second: Sakon_358
+  - first:
+      213: -4805427942944774736
+    second: Sakon_359
+  - first:
+      213: 7566515501282316780
+    second: Sakon_360
+  - first:
+      213: -5879836892337141080
+    second: Sakon_361
+  - first:
+      213: -3731901850732870768
+    second: Sakon_362
+  - first:
+      213: 8383195910806409051
+    second: Sakon_363
+  - first:
+      213: 3175018350659322645
+    second: Sakon_364
+  - first:
+      213: 2002155571270487227
+    second: Sakon_365
+  - first:
+      213: -6562347029694128146
+    second: Sakon_366
+  - first:
+      213: -7949519814414929485
+    second: Sakon_367
+  - first:
+      213: 2808045230491282569
+    second: Sakon_368
+  - first:
+      213: 7209137424977521772
+    second: Sakon_369
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sakon_107
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 991
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c170864790a5a720800000000000000
+      internalID: 2856866110219776452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_108
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 991
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99fc96292f354790800000000000000
+      internalID: -7546556154615367267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_109
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 991
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0189efd094a932360800000000000000
+      internalID: 7143723072497817616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_110
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 991
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4ea2a93a893ae20800000000000000
+      internalID: 3360697575382115520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_111
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 991
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e372f91dbc71620800000000000000
+      internalID: 2744886599084359193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_112
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 991
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f10feaeef0b14a0800000000000000
+      internalID: -6621681309306577047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_113
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 991
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d38c5b54f76bab0800000000000000
+      internalID: -4992663199514346198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_114
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 991
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e6d2dde3d95e530800000000000000
+      internalID: 3883683147001196145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_115
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 991
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cb01be4f230fcc0800000000000000
+      internalID: -3679384868064543618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_123
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 879
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5906a374ccaf5a0800000000000000
+      internalID: -6486647706979625480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_124
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 879
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fca32656b824c10800000000000000
+      internalID: 2036343249080864527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_125
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 879
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede5523899a1f8280800000000000000
+      internalID: -9038976680476713250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_126
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 879
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bbe7af00fe5ef90800000000000000
+      internalID: -6924866064530621537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_127
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 879
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42cc96baf3d0b490800000000000000
+      internalID: -7732447486436130225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_128
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 879
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04401c72d2cdf5420800000000000000
+      internalID: 2621055594651518016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_129
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 883
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bbbc365fdf85110800000000000000
+      internalID: 1250028126978423564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_130
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 883
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dceb09253c963dc0800000000000000
+      internalID: -3659565895056102188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_131
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 882
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fb2908c617501c0800000000000000
+      internalID: -4538096338678399198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_132
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 881
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce30642e992399a0800000000000000
+      internalID: -6227588100531405108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_133
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 882
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb8a069596830b60800000000000000
+      internalID: 7711154964013943738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_134
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 884
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0804327d0a46dcd60800000000000000
+      internalID: 7912090762326786176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_160
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 762
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eeb849a3aba69510800000000000000
+      internalID: 1555619440711220960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_161
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 762
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a2419ce8f23fbb0800000000000000
+      internalID: -4903523278970934729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_162
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 762
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c6bb7c7643e82a0800000000000000
+      internalID: -6733386772535088055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_163
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 762
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d90779fcd0c281f0800000000000000
+      internalID: -1044060108285867565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_201
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 646
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e2122dfc6e938f0800000000000000
+      internalID: -560162898372907405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_202
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 645
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791a21f07b12cd620800000000000000
+      internalID: 2800150138433216919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_203
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 646
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd360f0d2715874c0800000000000000
+      internalID: -4289589091496860709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_204
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 646
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a857e8c4b3ea242c0800000000000000
+      internalID: -4448801912177920630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_205
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 647
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed553e50f8586bee0800000000000000
+      internalID: -1245661397595761186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_206
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 647
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40893a6b8d97a2dd0800000000000000
+      internalID: -2510059870621558780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_217
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 522
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e58c96bd6895b50800000000000000
+      internalID: 6582440607309389329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_218
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 519
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0339d8681bdce7020800000000000000
+      internalID: 2341535018629567280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_219
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 518
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2ffcd27e67446c0800000000000000
+      internalID: -4160069420505369874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_220
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 520
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6d455bfb23449c0800000000000000
+      internalID: -3943971574707333417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_221
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 519
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374a52ecae7d58eb0800000000000000
+      internalID: -4718127631119833997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_222
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 518
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc098c5d452630c0800000000000000
+      internalID: -4596445355489817413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_223
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 518
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cd4a1bc308c5890800000000000000
+      internalID: -7467953083920360337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_224
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 517
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f15f3254bf50cde0800000000000000
+      internalID: -1314945863113551368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_225
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 519
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b5b38c55ffed610800000000000000
+      internalID: 1648035257560816391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_226
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 519
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205578c21df435810800000000000000
+      internalID: 1752832439791080706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_227
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 518
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d74b3a193a3450800000000000000
+      internalID: 6069226232661661529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_228
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 513
+        width: 71
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb73d9ae27916b670800000000000000
+      internalID: 8554052523589973950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_229
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 511
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04415b4f4a0471050800000000000000
+      internalID: 5771152524722902080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sakon_230
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 514
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e81a8a09a082d30800000000000000
+      internalID: 4406783851802758783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sakon_163: -1044060108285867565
+      Sakon_123: -6486647706979625480
+      Sakon_218: 2341535018629567280
+      Sakon_124: 2036343249080864527
+      Sakon_226: 1752832439791080706
+      Sakon_115: -3679384868064543618
+      Sakon_126: -6924866064530621537
+      Sakon_162: -6733386772535088055
+      Sakon_204: -4448801912177920630
+      Sakon_224: -1314945863113551368
+      Sakon_125: -9038976680476713250
+      Sakon_107: 2856866110219776452
+      Sakon_111: 2744886599084359193
+      Sakon_129: 1250028126978423564
+      Sakon_128: 2621055594651518016
+      Sakon_131: -4538096338678399198
+      Sakon_127: -7732447486436130225
+      Sakon_202: 2800150138433216919
+      Sakon_134: 7912090762326786176
+      Sakon_109: 7143723072497817616
+      Sakon_217: 6582440607309389329
+      Sakon_112: -6621681309306577047
+      Sakon_227: 6069226232661661529
+      Sakon_219: -4160069420505369874
+      Sakon_203: -4289589091496860709
+      Sakon_130: -3659565895056102188
+      Sakon_220: -3943971574707333417
+      Sakon_160: 1555619440711220960
+      Sakon_221: -4718127631119833997
+      Sakon_205: -1245661397595761186
+      Sakon_110: 3360697575382115520
+      Sakon_108: -7546556154615367267
+      Sakon_201: -560162898372907405
+      Sakon_206: -2510059870621558780
+      Sakon_225: 1648035257560816391
+      Sakon_113: -4992663199514346198
+      Sakon_223: -7467953083920360337
+      Sakon_161: -4903523278970934729
+      Sakon_114: 3883683147001196145
+      Sakon_133: 7711154964013943738
+      Sakon_229: 5771152524722902080
+      Sakon_228: 8554052523589973950
+      Sakon_230: 4406783851802758783
+      Sakon_222: -4596445355489817413
+      Sakon_132: -6227588100531405108
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
