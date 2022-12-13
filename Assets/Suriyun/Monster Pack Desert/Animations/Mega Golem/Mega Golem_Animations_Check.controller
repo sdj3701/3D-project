@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0eedcbf756c465a913d072f74505e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 3
+  totalTime: 1
 --- !u!1101 &6833623518975033192
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

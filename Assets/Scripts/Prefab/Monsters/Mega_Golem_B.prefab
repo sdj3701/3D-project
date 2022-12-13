@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 4845980275028508640}
   - component: {fileID: 8507018501575531860}
   - component: {fileID: -2632296260108693128}
+  - component: {fileID: 5112820534445795967}
   m_Layer: 0
   m_Name: Mega_Golem_B
   m_TagString: Untagged
@@ -881,6 +882,20 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5112820534445795967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463014507095604552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9b5ca90b0b04c198d2c36b60d162bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 180
+  Monster: {fileID: 8463014507095604552}
 --- !u!1 &8827577873969868125
 GameObject:
   m_ObjectHideFlags: 0

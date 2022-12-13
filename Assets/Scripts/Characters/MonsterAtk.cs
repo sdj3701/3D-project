@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class MonsterAtk : Character_Nav
 {
-    public float maxDistance = 1;
-
+    public GameObject[] SkillPrefabs; //찍어낼 게임 오브젝트를 넣어요
+                                 //배열로 만든 이유는 게임 오브젝트를
+                                 //다양하게 찍어내기 위해서 입니다
+    public int interval = 10;      //찍어낼 게임 오브젝트 갯수
     
+    float skillDelay = 3f;
+    float liftTime;
+    
+    public List<GameObject> inst = new List<GameObject>();
+    public float maxDistance = 1;
 
     protected override void Attack()
     {
@@ -34,13 +41,19 @@ public class MonsterAtk : Character_Nav
     {
         Vector3 dir = playercharacter.transform.position - transform.position;
         float distance = Vector3.Distance(playercharacter.transform.position, transform.position);
-        //Debug.Log(distance);
 
-        if(distance >= 5)
+        if(distance >= 5 )
         {
-            Skill();
-            // Vector3 a = new Vector3(playercharacter.transform.position.x - transform.position.x -3f, 0,playercharacter.transform.position.y - transform.position.y -3f);
-            // transform.position += a * 1 * Time.deltaTime;
+            if(skillDelay <= 0)
+            {
+                Skill();
+                for(int i = 0 ; i < interval ; i++)
+                {
+                    Spawn();//생성 + 스폰위치를 포함하는 함수
+                }
+                skillDelay = 10f;
+            }
+            skillDelay -= Time.deltaTime;
         }
 
         if(Delay <= 0)
@@ -50,4 +63,33 @@ public class MonsterAtk : Character_Nav
         Delay -= Time.deltaTime;
         base.Update();
     }
+
+    private Vector3 GetRandomPosition()
+    {
+        Vector3 basePosition = transform.position;
+        
+        float randomX = Random.Range(-15f, 15f); //적이 나타날 X좌표를 랜덤으로 생성해 줍니다.
+        float randomZ = Random.Range(-15f, 15f); // 적이 나타날 Z좌표를 랜덤으로!
+        
+        Vector3 spawnPos = new Vector3(randomX, 1, randomZ);
+        
+        return spawnPos;
+    }
+
+    private void Spawn()
+    {   
+        int selection = Random.Range(0, SkillPrefabs.Length);
+        
+        if(SkillPrefabs.Length <= 0)
+        {
+            return;
+        }
+        GameObject selectedPrefab = SkillPrefabs[selection];
+        
+        Vector3 spawnPos = GetRandomPosition();//랜덤위치함수
+        
+        GameObject instance = Instantiate(selectedPrefab, spawnPos, Quaternion.identity);
+        inst.Add(instance);
+    }
+
 }

@@ -180,18 +180,12 @@ public class CharacterBase : MonoBehaviour
         Vector3 totalDirection = (moveDirection * Mathf.Max(Stat.MoveSpeed, 0)) + physicsDirection;
     }
 
-    virtual protected void Skill()
+   virtual public void Skill()
     {
-        if(Delay >= 0)
-        {
-            return;
-        }
-        Delay = 10;
-
+        
         if(controller == ControllerType.AI_FollowPlayer)
         {
             anim.SetTrigger("Skill");
-
         }
     }
 

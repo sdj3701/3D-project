@@ -447,7 +447,7 @@ Transform:
   - {fileID: 6007513513438702220}
   m_Father: {fileID: 4136143588273334867}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 149.462}
 --- !u!1 &1818197328073209301
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3766817092926895727}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.34147522, z: -0.1550544}
+  m_LocalPosition: {x: 0, y: 0.34147522, z: -0.1550544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1382,14 +1382,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5819077235942121001}
   m_LocalRotation: {x: 0.18621467, y: -0.6821467, z: -0.18621467, w: 0.6821467}
-  m_LocalPosition: {x: 0.12108868, y: 0.13847709, z: -0.26393646}
+  m_LocalPosition: {x: 0.1210887, y: 0.184, z: -0.2639365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3740820106271068959}
   m_Father: {fileID: 4136143588273334867}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -30.538}
 --- !u!1 &6571847217479244547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1901,7 @@ GameObject:
   - component: {fileID: 6537303015803260576}
   - component: {fileID: 6537303015803260602}
   - component: {fileID: 6537303015803260600}
+  - component: {fileID: 907633319941534695}
   m_Layer: 10
   m_Name: Golem_Child
   m_TagString: Untagged
@@ -2008,6 +2009,20 @@ MonoBehaviour:
   _attackDelay: 0
   _attackRange: 0
   moveSpeedMultiplier: 1
+--- !u!114 &907633319941534695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8770531904313274384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9b5ca90b0b04c198d2c36b60d162bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 540
+  Monster: {fileID: 8770531904313274384}
 --- !u!1 &8951914255579103344
 GameObject:
   m_ObjectHideFlags: 0

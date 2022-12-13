@@ -20,7 +20,7 @@ public class lookplayer : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         passedTime += Time.deltaTime;
-        startPosition = Vector3.Slerp(startPosition, jumpPosition, passedTime/totalTime );
+        startPosition = Vector3.Slerp(startPosition, jumpPosition, passedTime/totalTime);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

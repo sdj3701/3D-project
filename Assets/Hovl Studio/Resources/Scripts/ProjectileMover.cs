@@ -58,7 +58,8 @@ public class ProjectileMover : MonoBehaviour
         Vector3 pos = contact.point + contact.normal * hitOffset;
 
         //Spawn hit effect on collision
-        if (hit != null)
+        //플레이어만 맞게 해두는 코드
+        if (hit != null && GameManager.GetPlayer(0).gameObject == collision.gameObject) //게임 플레이어 오브젝트가 닿은 콜리전 오브젝트랑 같은지 확인
         {
             var hitInstance = Instantiate(hit, pos, rot);
             if (UseFirePointRotation) { hitInstance.transform.rotation = gameObject.transform.rotation * Quaternion.Euler(0, 180f, 0); }
@@ -69,6 +70,7 @@ public class ProjectileMover : MonoBehaviour
             var hitPs = hitInstance.GetComponent<ParticleSystem>();
             if (hitPs != null)
             {
+                GetComponent<MDamageBox>().ApplyDamage(collision.gameObject.GetComponent<CharacterBase>());// 맞으면 데미지 박스에 있는 데미지를 불러와 부딪힌 대상에게 데미지를 줌
                 Destroy(hitInstance, hitPs.main.duration);
             }
             else

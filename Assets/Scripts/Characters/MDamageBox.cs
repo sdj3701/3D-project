@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageBox : MonoBehaviour
+public class MDamageBox : MonoBehaviour
 {
     public CharacterBase owner;
     public Collider col;
@@ -17,7 +17,7 @@ public class DamageBox : MonoBehaviour
         col = GetComponent<Collider>();
         info = GetComponentInParent<AppearanceInfo>(); //부모에 있기는 해야 주든가 말든가
         
-        damage = owner.Stat.AttackDamage; //발사 하는 시점에 오너가누구 인지
+        //damage = owner.Stat.AttackDamage; //발사 하는 시점에 오너가누구 인지
 
         if(col && info)
         {
@@ -29,7 +29,7 @@ public class DamageBox : MonoBehaviour
     public void ApplyDamage(CharacterBase other)
     {
         //상대방이 있을 때에만 데미지를 줍니다 그리고 동맹이 아니면
-        if(other && (!owner || other.Stat.isAlly != owner.Stat.isAlly))
+        if(other )
         {// 주인이 없으면 동맹을 확인 할 수 없어요 무조건 떄리기 ex) 투석
             other.ApplyDamage(damage, owner);
         }

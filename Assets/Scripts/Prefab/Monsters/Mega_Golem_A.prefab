@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -4677284524904849935}
   - component: {fileID: 7838669203571284960}
   - component: {fileID: 4205654267697407874}
+  - component: {fileID: 282082547911981686}
   m_Layer: 0
   m_Name: Mega_Golem_A
   m_TagString: Untagged
@@ -146,6 +147,20 @@ MonoBehaviour:
   hudDamageText: {fileID: 0}
   hudPos: {fileID: 0}
   maxDistance: 1
+--- !u!114 &282082547911981686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217885674573650028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9b5ca90b0b04c198d2c36b60d162bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 360
+  Monster: {fileID: 217885674573650028}
 --- !u!1 &238519043650642085
 GameObject:
   m_ObjectHideFlags: 0
