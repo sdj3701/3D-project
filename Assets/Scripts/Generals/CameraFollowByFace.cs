@@ -8,13 +8,11 @@ public class CameraFollowByFace : MonoBehaviour
     public Vector3 offset; // 위치설정
     public float distance; // 거리 범위
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(targetCharacter == null)//대상을 찾지 못하면
@@ -55,4 +53,5 @@ public class CameraFollowByFace : MonoBehaviour
     }
     transform.position += targetCharacter.FaceDirection * -calculatDistance;
     }
+
 }

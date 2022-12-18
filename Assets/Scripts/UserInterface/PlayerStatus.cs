@@ -25,6 +25,8 @@ public class PlayerStatus : CharacterStatus
 
                 ++_level;
                 if(owner)owner.LevelUp();
+
+                
             }
         }
     }

@@ -94,6 +94,6 @@ public class UIManager : MonoBehaviour
         this.Singleton(ref _instance);
     }
 
-    public void ClaimUI(string name){ ClaimUI(name, true); }
+    public void ClaimUI(string name){ ClaimUI(name, true); } // 퍼즈 걸기
     public virtual void ClaimUI(string name, bool open){ currentFocusUI = name; }
 }

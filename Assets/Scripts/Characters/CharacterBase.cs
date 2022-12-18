@@ -159,6 +159,7 @@ public class CharacterBase : MonoBehaviour
                 GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
             }    
         }
+        
     }
 
     virtual public void Select(Transform selectTarget)

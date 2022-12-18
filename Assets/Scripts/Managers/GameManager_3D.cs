@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager_3D : GameManager
 {
-    public static int maxWeaponNumber = 5;
+    //public static int maxWeaponNumber = 5;
     public static int maxPassiveNumber = 5;
 
     //게임의 남은 시간이예요!
@@ -18,7 +18,6 @@ public class GameManager_3D : GameManager
 
 //     //조합 정보를 저장!
 //     public static List<CombineInfo> combineInfos;
-
     
 //     //무기 정보를 여기에다가 저장해놓도록 할게요!
 //     public static Dictionary<string, WeaponInfo> weaponInfos;
@@ -219,7 +218,6 @@ public class GameManager_3D : GameManager
 //                 "경험치 획득 범위가 증가합니다.",
 //                 true);
 //         }
-
 
 //         ///////////////////////////////////////////패시브//////////////////////////////////////////////
         

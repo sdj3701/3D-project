@@ -146,6 +146,9 @@ MonoBehaviour:
   stiff: 0
   hudDamageText: {fileID: 0}
   hudPos: {fileID: 0}
+  SkillPrefabs: []
+  interval: 10
+  inst: []
   maxDistance: 1
 --- !u!114 &282082547911981686
 MonoBehaviour:
@@ -159,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9b5ca90b0b04c198d2c36b60d162bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 360
+  spawnTime: 60
   Monster: {fileID: 217885674573650028}
 --- !u!1 &238519043650642085
 GameObject:

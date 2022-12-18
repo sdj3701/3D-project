@@ -8,28 +8,28 @@ public class MonsterController : Controller
     float verticalAngle; // 수직
     
     // 마우스 고정
-    public static bool mouseFix 
-    {
-        get
-        {
-            return Cursor.lockState == CursorLockMode.Locked; // 잠긴 상태
-        }
+    // public static bool mouseFix 
+    // {
+    //     get
+    //     {
+    //         return Cursor.lockState == CursorLockMode.Locked; // 잠긴 상태
+    //     }
 
-        set
-        {
-            if(value)
-            {
-                Cursor.lockState = CursorLockMode.Locked; //화면 고정
-                Cursor.visible = false; // 마우스 안보이게
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.None; //고정 해제
-                Cursor.visible = true; //마우스 다시 보이게
-            }
-        }
+    //     set
+    //     {
+    //         if(value)
+    //         {
+    //             Cursor.lockState = CursorLockMode.Locked; //화면 고정
+    //             Cursor.visible = false; // 마우스 안보이게
+    //         }
+    //         else
+    //         {
+    //             Cursor.lockState = CursorLockMode.None; //고정 해제
+    //             Cursor.visible = true; //마우스 다시 보이게
+    //         }
+    //     }
         
-    }
+    // }
 
     public void SetAngles(float hor,float ver)
     {
@@ -50,15 +50,15 @@ public class MonsterController : Controller
         }
         
 
-        if(mouseFix && InputManager.mouseChangePosition.magnitude > 0) //Inputmanager을 사용하기 위해서는 GameManager를 생성하여 사용해야함
-        {
-            horizontalAngle -= InputManager.mouseChangePosition.x * InputManager.mouseSensitive;
-            verticalAngle += InputManager.mouseChangePosition.y * InputManager.mouseSensitive;
+        // if(mouseFix && InputManager.mouseChangePosition.magnitude > 0) //Inputmanager을 사용하기 위해서는 GameManager를 생성하여 사용해야함
+        // {
+        //     horizontalAngle -= InputManager.mouseChangePosition.x * InputManager.mouseSensitive;
+        //     verticalAngle += InputManager.mouseChangePosition.y * InputManager.mouseSensitive;
 
-            verticalAngle = Mathf.Clamp(verticalAngle, -80.0f, 80.0f);
+        //     verticalAngle = Mathf.Clamp(verticalAngle, -80.0f, 80.0f);
 
-            SetAngles(horizontalAngle,verticalAngle);
-        }
+        //     SetAngles(horizontalAngle,verticalAngle);
+        // }
 
         Vector3 moveDir = new Vector3();
 

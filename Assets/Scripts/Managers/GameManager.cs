@@ -34,9 +34,9 @@ public class GameManager : MonoBehaviour
         set => pauserClaim = Mathf.Max(value ? pauserClaim + 1 : pauserClaim - 1 , 0); 
     }
 
-    public static void ForcePause(bool value)
+    public static void ForcePause(bool value) //강제로 게임을 멈추거나 실행시키는 함수
     {
-        pauserClaim = value ? Mathf.Max(1, pauserClaim) : 0 ;
+        pauserClaim = value ? Mathf.Max(1, pauserClaim) : 0 ; //멈추고 싶으면 최소 1로 고정
     }
 
     void OnEnable() 

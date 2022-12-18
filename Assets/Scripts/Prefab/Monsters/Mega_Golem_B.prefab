@@ -867,6 +867,9 @@ MonoBehaviour:
   stiff: 0
   hudDamageText: {fileID: 0}
   hudPos: {fileID: 0}
+  SkillPrefabs: []
+  interval: 10
+  inst: []
   maxDistance: 1
 --- !u!136 &-2632296260108693128
 CapsuleCollider:
@@ -894,7 +897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9b5ca90b0b04c198d2c36b60d162bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 180
+  spawnTime: 30
   Monster: {fileID: 8463014507095604552}
 --- !u!1 &8827577873969868125
 GameObject:
